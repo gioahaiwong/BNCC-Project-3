@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Times New Roman;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-image: url("./Picture/top-view-work-desk-with-drawing-pad-glasses-with-copy-space.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  justify-content: center;
+}
+.title-upper {
+  font-size: 35px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: aliceblue;
+  display: inline-block;
+}
+.title2-upper {
+  font-size: 35px;
+  cursor: default;
+  color: aliceblue;
+  display: inline-block;
+}
+.title-upper:hover {
+  transform: scaleX(1.1);
+  color: #14b464;
+  letter-spacing: 2px;
+}
+.upper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+}
+.portofolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 70px;
+  gap: 20px;
+}
+.photo-container {
+  border-style: dotted;
+  border-width: 1px;
+  border-radius: 0px;
+  width: 250px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #f8fbf8;
+}
+.photo-size {
+  font-size: 20px;
+}
+.explain-text {
+  font-size: 20px;
+  color: #f4f8ff;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.explain-text:hover {
+  transform: scale(1.3) rotate(180deg);
+  color: beige;
+  text-align: center;
+}
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 5px;
+  margin-bottom: 40px;
+}
+.table-text-content {
+  color: #f8fbf8;
+  border-style: solid;
+  border-width: 2px;
+  padding-inline: 5px;
+  padding-block: 5px;
+}
+.aboutme-title {
+  font-size: 30px;
+  color: rgb(221, 230, 230);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.portofolio-preview {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+.portofolio-photo {
+  width: 800px;
+  height: 450px;
+  align-items: center;
+  display: block;
+  justify-content: center;
+}
+.portofolio-preview-title {
+  font-size: 50px;
+  color: #f8fbf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-block: 20px;
+}
+.contact-container-title {
+  font-size: 50px;
+  color: rgb(0, 245, 224);
+}
+.contact-content-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.contact-content {
+  font-size: 30px;
+  color: #f8fbf8;
+  padding-block: 5px;
+}
+.closing-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.closing-text {
+  font-size: 30px;
+  color: #f8fbf8;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.button-fun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: blue;
+  padding-inline: 40px;
+  padding-block: 10px;
+  height: auto;
+  width: 475px;
+  text-align: center;
+  cursor: pointer;
+  color: whitesmoke;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button-fun:hover {
+  background-color: rgb(245, 245, 11);
+  transform: scale(1.1);
+}
+
+@keyframes coolAnimation {
+  0% {
+    transform: scale(1) rotate(0deg);
+    background-color: blue;
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+    background-color: #3498db;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    background-color: blue;
+  }
+}
+
+.button-fun.animate {
+  animation: coolAnimation 1s ease-in-out;
+}
